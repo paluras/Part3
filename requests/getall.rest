@@ -1,0 +1,8 @@
+post http://localhost:3001/api/numbers
+Content-Type: application/json
+
+{
+    
+      "name": "12asdasd2asd323", 
+      "number": "112sd323"
+}
