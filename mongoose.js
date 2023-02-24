@@ -11,7 +11,7 @@ const name = process.argv[3]
 const number = process.argv[4]
 
 const url =
-"mongodb+srv://paluraandrei1:<password>@cluster0.0pgwozk.mongodb.net/PhoneBook?retryWrites=true&w=majority"
+`mongodb+srv://paluraandrei1:${password}@cluster0.0pgwozk.mongodb.net/PhoneBook?retryWrites=true&w=majority`
 
 mongoose.set('strictQuery',false)
 mongoose.connect(url)
