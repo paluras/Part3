@@ -3,7 +3,7 @@ const express = require('express')
 const morgan = require('morgan')
 const app = express()
 
-
+app.use(express.static('build'))
 app.use(morgan("tiny"))
 
 let numbers = [
@@ -70,6 +70,8 @@ app.get('/', (request, response) => {
     return rndID
   }
 
+  
+
   app.use(express.json())
   app.post("/api/numbers", (request,response)=>{
    
@@ -109,7 +111,7 @@ app.get('/', (request, response) => {
    { return req.headers['content-type'] })
 
 
-  const PORT = 3001
+const PORT = process.env.PORT || 3001
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
   })
