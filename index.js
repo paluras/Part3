@@ -44,7 +44,7 @@ app.get('/', (request, response) => {
                    <p> ${date}</p>`)
   })
   
-  app.get("/api/persons/:id", (request, response)=> {
+  app.get("/api/numbers/:id", (request, response)=> {
     const id = Number(request.params.id)
     const person = numbers.find(person => person.id === id)
     if(person){response.json(person)
@@ -53,7 +53,7 @@ app.get('/', (request, response) => {
     }
   })
 
-  app.delete("/api/persons/:id", (request,response)=>{
+  app.delete("/api/numbers/:id", (request,response)=>{
     const id = Number(request.params.id)
     numbers = numbers.filter(p => p.id !== id)
 
@@ -69,7 +69,7 @@ app.get('/', (request, response) => {
       : 0
     return rndID
   }
-
+s
   
 
   app.use(express.json())
