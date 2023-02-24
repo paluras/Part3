@@ -1,8 +1,8 @@
-post http://localhost:3001/api/numbers
+get http://localhost:3001/api/numbers/
 Content-Type: application/json
 
 {
     
-      "name": "12asdasd2asd323", 
-      "number": "112sd323"
+      "name": "12as21211233jh31dasd2asd323", 
+      "number": "112sd12f3123323"
 }
